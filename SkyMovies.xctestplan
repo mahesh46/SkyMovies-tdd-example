@@ -1,0 +1,37 @@
+{
+  "configurations" : [
+    {
+      "id" : "2B386D4A-FBB1-4054-B669-9F77B24A9396",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:SkyMovies.xcodeproj",
+      "identifier" : "FC490A782A1B819E00F2A881",
+      "name" : "SkyMovies"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:SkyMovies.xcodeproj",
+        "identifier" : "FC490A882A1B819F00F2A881",
+        "name" : "SkyMoviesTests"
+      }
+    },
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:SkyMovies.xcodeproj",
+        "identifier" : "FC490A922A1B819F00F2A881",
+        "name" : "SkyMoviesUITests"
+      }
+    }
+  ],
+  "version" : 1
+}
