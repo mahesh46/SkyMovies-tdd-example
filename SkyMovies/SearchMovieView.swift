@@ -27,10 +27,11 @@ struct SearchMovieView: View {
                         .frame(maxWidth: .infinity)
                 }
                 .padding()
-                .background(Color(red: 0, green: 116 / 255, blue: 217 / 255))
+                .background(Color( .lightGray))
                 .frame( maxWidth: .infinity)
                 .edgesIgnoringSafeArea(.all)
                 .cornerRadius(10)
+                .shadow(color: .gray, radius: 5, x: 10, y: 10)
             }.listStyle(.plain)
                 .searchable(text: $searchText)
                 .onChange(of: searchText) { value in
