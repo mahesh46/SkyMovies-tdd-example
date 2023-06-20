@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SearchMovieView: View {
   //  @StateObject private var movieListVM = MovieListViewModel(service: Webservice() )
-    @ObservedObject private var movieListVM = MovieListViewModel(service: NetworkServiceFactory.create() )
+    @StateObject private var movieListVM = MovieListViewModel(service: NetworkServiceFactory.create() )
     @State private var searchText: String = ""
     var body: some View {
         NavigationStack {
