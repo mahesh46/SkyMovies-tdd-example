@@ -7,15 +7,14 @@
 
 import Foundation
 
-@MainActor
+
 class MovieListViewModel: ObservableObject {
     @Published var movies: [MovieViewModel] = []
     private var service: NetworkService
-    
     init(service: NetworkService) {
     self.service = service
     }
-    func search(name: String) async -> [MovieViewModel] {
+    @MainActor func search(name: String) async -> [MovieViewModel] {
         do {
             let movies = try await self.service.getMovies(searchTerm: name)
             self.movies = movies.map(MovieViewModel.init)
